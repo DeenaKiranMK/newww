@@ -13,6 +13,7 @@
                 <th>id</th>
                 <th>Name</th>
                 <th>Salary</th>
+                <th>Options</th>
             </tr>
         </thead>
         <tbody>
@@ -21,6 +22,7 @@
                 <td>{{ employees.pk }}</td>
                 <td>{{ employees.name }}</td>
                 <td>{{ employees.salary }}</td>
+                <td><a href ="{% url 'delete_emp' employees.pk %}" >Delete</a></td>
 
             </tr>
             {% endfor %}
